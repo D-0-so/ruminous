@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruminous Club Invitation v2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop src="music.mp3"></audio>
+
+    <div id="app">
+        <section id="step1" class="scene active">
+            <div class="mascot-container">
+                <img src="ch.jpg" alt="Mascot" id="mascot">
+                <div id="thought-bubble" class="bubble-hidden">
+                    <p id="thought-text"></p>
+                </div>
+            </div>
+            <button id="nextBtn" class="btn-hide">Цааш —></button>
+        </section>
+
+        <section id="step2" class="scene hidden">
+            <video id="promoVideo" playsinline>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="step3" class="scene hidden">
+            <div class="invitation-box">
+                <h2>УРИЛГА</h2>
+                <div class="line"></div>
+                <p>Та бүхнийг 4-р сарын 4-ны өдөр бид бүгдийг ирж дэмжээсэй гэж хүсэж байна.</p>
+            </div>
+        </section>
+
+        <section id="step4" class="scene hidden">
+            <div class="garden" id="garden"></div>
+            <div class="heart-wrapper">
+                <div class="heart3d"></div>
+            </div>
+            <button id="finishBtn" class="btn-finish">Дуусгах</button>
+        </section>
+
+        <section id="step5" class="scene hidden sky-bg">
+            <div class="cloud-container"></div>
+            <h1 class="glow-text">RUMINOUS CLUB</h1>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
